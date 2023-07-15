@@ -1,0 +1,26 @@
+﻿<Window x:Class="tiffin.AddPropertyDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Property Details" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Property Name" HorizontalAlignment="Left" Margin="10,10"/>
+        <TextBox Grid.Row="0" x:Name="PropertyNameTextBox" HorizontalAlignment="Left" Width="200" Margin="120,10"/>
+
+        <Label Grid.Row="1" Content="Location" HorizontalAlignment="Left" Margin="10,10"/>
+        <TextBox Grid.Row="1" x:Name="LocationTextBox" HorizontalAlignment="Left" Width="200" Margin="120,10"/>
+
+        <Label Grid.Row="2" Content="Price" HorizontalAlignment="Left" Margin="10,10"/>
+        <TextBox Grid.Row="2" x:Name="PriceTextBox" HorizontalAlignment="Left" Width="200" Margin="120,10"/>
+
+        <Button Grid.Row="3" Content="Submit" HorizontalAlignment="Left" Margin="10,10"  Click="SubmitButton_Click"/>
+
+    </Grid>
+</Window>
